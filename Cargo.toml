@@ -1,0 +1,16 @@
+[package]
+name = "ida-rust-plugin-example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+autocxx = { git = "https://github.com/google/autocxx.git", rev = "0d23d86cbbb619991e6e9c553215b42edc0a56fb" }
+cxx = "1.0.129"
+
+[build-dependencies]
+miette = { version = "5", features = ["fancy"] }
+autocxx-build = { git = "https://github.com/google/autocxx.git", rev = "0d23d86cbbb619991e6e9c553215b42edc0a56fb" }
+cc = "1.1.31"
