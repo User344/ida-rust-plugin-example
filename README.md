@@ -33,7 +33,7 @@ Build script is used to:
 
 - Link IDA SDK static library.
 - Use autocxx to generate Rust bindings.
-- Use autocxx to generate bindings for [bridge](#src/ida/bridge.rs).
+- Use autocxx to generate bindings for [bridge](#srcidabridgers).
 - Compile and link bridge.
 
 ### [src/ida/bindgen.rs](src/ida/bindgen.rs)
@@ -48,7 +48,7 @@ In this case you could either define it manually using [cxx::bridge](https://goo
 or you could write your own method that wraps it and exposes it using bridge.
 
 Just declare your method in [bridge.hpp](src/ida/bridge.hpp),
-implement it in [bridge.cpp](src/ida/bridge.cpp), and include it in [bridge.rs](srcidabridgers).
+implement it in [bridge.cpp](src/ida/bridge.cpp), and include it in [bridge.rs](src/ida/bridge.rs).
 
 ### [src/ida/types.rs](src/ida/types.rs)
 
